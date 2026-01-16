@@ -23,9 +23,14 @@ public class UsuarioService {
 
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
+        scanner.nextLine();
 
         usuarioRepository.adicionarNovoUsuario(nome,email,idade);
 
+    }
+
+    public void listarUsuario(){
+        usuarioRepository.listarUsuarios();
     }
 
 
