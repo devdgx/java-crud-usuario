@@ -45,7 +45,7 @@ public class UsuarioService {
     public void atualizarDadosUsuario(){
         System.out.print("Email do Usuario: ");
         String nome = scanner.nextLine();
-        usuarioRepository.
+        usuarioRepository.atualizarDadosUsuario(nome);
     }
 
 
