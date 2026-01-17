@@ -20,11 +20,28 @@ public class UsuarioController {
             System.out.println("---MENU---");
 
             System.out.println("1- adicionar Usuario");
-            System.out.println("2- Remover Usuario");
-            System.out.println("2- Listar Usuarios");
-            System.out.println("2- Buscar por ID Usuario");
+            System.out.println("2- Listar Usuario");
+            System.out.println("3- Remover Usuarios");
+            System.out.println("4- Atualizar Dados Usuario");
+
+            opcao = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (opcao){
+                case 1:
+                    usuarioService.adicionarUsuario();
+                    break;
+
+                case 2:
+                    usuarioService.listarUsuario();
+                    break;
+                case 3:
+                    usuarioService.removerUsuario();
+
 
 
         }
+
+        scanner.close();
     }
 }
