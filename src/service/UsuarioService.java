@@ -3,6 +3,7 @@ package service;
 import controller.UsuarioController;
 import repository.UsuarioRepository;
 
+import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class UsuarioService {
@@ -31,6 +32,20 @@ public class UsuarioService {
 
     public void listarUsuario(){
         usuarioRepository.listarUsuarios();
+    }
+
+    public void removerUsuario(){
+        System.out.print("Nome do Usuario: ");
+        String nome = scanner.nextLine();
+        usuarioRepository.removerUsuario(nome);
+    }
+
+    //
+
+    public void atualizarDadosUsuario(){
+        System.out.print("Email do Usuario: ");
+        String nome = scanner.nextLine();
+        usuarioRepository.
     }
 
 
