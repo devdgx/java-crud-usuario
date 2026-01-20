@@ -13,10 +13,10 @@ public class UsuarioController {
         this.usuarioService = usuarioService;
     }
 
-    public void inicarPainelDeMenu(){
+    public void inicarPainelDeMenu() {
         int opcao = -1;
 
-        while (opcao != 0){
+        while (opcao != 0) {
             System.out.println("---MENU---");
 
             System.out.println("1- adicionar Usuario");
@@ -27,7 +27,7 @@ public class UsuarioController {
             opcao = scanner.nextInt();
             scanner.nextLine();
 
-            switch (opcao){
+            switch (opcao) {
                 case 1:
                     usuarioService.adicionarUsuario();
                     break;
@@ -37,11 +37,13 @@ public class UsuarioController {
                     break;
                 case 3:
                     usuarioService.removerUsuario();
+                    break;
 
+                case 4:
+                    usuarioService.atualizarDadosUsuario();
+                    break;
 
-
+            }
         }
-
-        scanner.close();
     }
 }
