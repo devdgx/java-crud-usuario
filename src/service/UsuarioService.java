@@ -1,6 +1,7 @@
 package service;
 
 import controller.UsuarioController;
+import model.Usuario;
 import repository.UsuarioRepository;
 
 import javax.sound.midi.Soundbank;
@@ -43,7 +44,56 @@ public class UsuarioService {
     //
 
     public void atualizarDadosUsuario(){
-        usuarioRepository.atualizarDadosUsuario();
+
+        System.out.println("Nome do Email: ");
+        String email = scanner.nextLine();
+
+        Usuario usuario = usuarioRepository.BuscarPorEmail(email);
+
+                int opcao = -1;
+                do {
+                    System.out.println("--MENU DE ATUALIZAÇÂO");
+                    System.out.println("1- Atualizar Nome");
+                    System.out.println("2- Atualizar E-mail");
+                    System.out.println("3- Atualizar Idade");
+                    System.out.println("0- Sair");
+
+                    opcao = scanner.nextInt();
+                    scanner.nextLine();
+
+
+                    switch (opcao){
+
+                        case 1:
+                            System.out.print("Novo Nome: ");
+                            String novoNomeDoUsuario = scanner.nextLine();
+                            usuario.setNome(novoNomeDoUsuario);
+                            break;
+                        case 2:
+                            System.out.print("Novo E-mail: ");
+                            String novoEmailDoUsuario = scanner.nextLine();
+                            usuario.setEmail(novoEmailDoUsuario);
+                            break;
+
+                        case 3:
+                            System.out.print("Nova Idade: ");
+                            int novaIdadeUsuario = scanner.nextInt();
+                            scanner.nextLine();
+                            usuario.setIdade(novaIdadeUsuario);
+                            break;
+
+                        case 0:
+                            System.out.println("Saindo...");
+                            break;
+
+                        default:
+                            System.out.println("Digite numero valido");
+
+                    }
+
+
+
+                }while (opcao!=0);
     }
 
 
