@@ -32,7 +32,9 @@ public class UsuarioService {
     }
 
     public void listarUsuario(){
-        usuarioRepository.listarUsuarios();
+
+
+        System.out.println(usuarioRepository.listarUsuarios());
     }
 
     public void removerUsuario(){
