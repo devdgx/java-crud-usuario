@@ -13,10 +13,8 @@ public class UsuarioRepository {
         this.usuariosList = new LinkedList<>();
     }
 
-    public void adicionarNovoUsuario(String nome, String email, int idade) {
-        Usuario usuario = new Usuario(nome, idade, email);
+    public void adicionarNovoUsuario(Usuario usuario) {
         usuariosList.add(usuario);
-        System.out.println("Usuario Criado Com Sucesso!");
     }
 
     public List<Usuario> listarUsuarios() {
