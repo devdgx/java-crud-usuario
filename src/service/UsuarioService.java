@@ -63,6 +63,10 @@ public class UsuarioService {
 
         Usuario usuario = usuarioRepository.BuscarPorEmail(email);
 
+        if (usuario== null){
+            System.out.println("Usuario não Encontrado! ");
+        }
+
                 int opcao = -1;
                 do {
                     System.out.println("--MENU DE ATUALIZAÇÂO");
