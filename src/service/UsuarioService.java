@@ -17,6 +17,7 @@ public class UsuarioService {
     }
 
     public void adicionarUsuario(){
+
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
 
@@ -27,7 +28,10 @@ public class UsuarioService {
         int idade = scanner.nextInt();
         scanner.nextLine();
 
-        usuarioRepository.adicionarNovoUsuario(nome,email,idade);
+        Usuario novoUsuario = new Usuario(nome, idade, email);
+
+        usuarioRepository.adicionarNovoUsuario(novoUsuario);
+        System.out.println("Usuario Cadastrado!");
 
     }
 
