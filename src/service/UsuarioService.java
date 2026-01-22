@@ -38,9 +38,20 @@ public class UsuarioService {
     }
 
     public void removerUsuario(){
-        System.out.print("Nome do Usuario: ");
-        String nome = scanner.nextLine();
-        usuarioRepository.removerUsuario(nome);
+        System.out.println("Digite email do Usuario: ");
+        String emailDoUsuario = scanner.nextLine();
+
+        Usuario usuarioEmail = usuarioRepository.BuscarPorEmail(emailDoUsuario);
+
+        if (usuarioEmail == null){
+            System.out.println("Usuario não Encontrado");
+
+        }else {
+            usuarioRepository.removerUsuario(emailDoUsuario);
+            System.out.println("Usuario Removido!");
+        }
+
+
     }
 
     //
