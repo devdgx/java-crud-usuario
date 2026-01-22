@@ -38,9 +38,11 @@ public class UsuarioController {
                 case 3:
                     usuarioService.removerUsuario();
                     break;
-
                 case 4:
                     usuarioService.atualizarDadosUsuario();
+                    break;
+                default:
+                    System.out.println("Digite numero valido!");
                     break;
 
             }
