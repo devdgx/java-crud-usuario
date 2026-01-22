@@ -22,7 +22,7 @@ public class UsuarioRepository {
     }
 
     public void removerUsuario(String nome) {
-        usuariosList.removeIf(usuario -> usuario.getNome().equalsIgnoreCase(nome));
+        usuariosList.removeIf(usuario -> usuario.getEmail().equalsIgnoreCase(nome));
 
 
     }
