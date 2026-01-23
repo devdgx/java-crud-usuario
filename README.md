@@ -55,6 +55,15 @@ O projeto segue uma arquitetura em camadas, separando responsabilidades:
 
 ---
 
+## 🔮 Evoluções Futuras
+
+- Persistência de dados com banco de dados relacional
+- Testes unitários com JUnit
+- Tratamento de exceções personalizadas
+- Migração para API REST com Spring Boot
+
+---
+
 ## 🗂️ Estrutura do Projeto
 
 ```text
