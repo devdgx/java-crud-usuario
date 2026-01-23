@@ -36,6 +36,15 @@ Toda a lógica foi pensada para manter o código **limpo**, **organizado** e **f
 - Organização de código em pacotes
 
 ---
+## 🏗️ Arquitetura
+
+O projeto segue uma arquitetura em camadas, separando responsabilidades:
+
+- **Model**: representação das entidades do domínio
+- **Repository**: gerenciamento e acesso aos dados
+- **Service**: regras de negócio e validações
+- **Application**: ponto de entrada do sistema
+---
 
 ## 🗂️ Estrutura do Projeto
 
