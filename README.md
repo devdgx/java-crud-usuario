@@ -8,23 +8,46 @@ Projeto de estudo desenvolvido em **Java**, que implementa um **CRUD completo de
 
 ---
 
+## 📌 Sobre o Projeto
+
+Este projeto foi criado com o objetivo de consolidar conhecimentos fundamentais de **Java**, simulando um sistema simples de cadastro de usuários, semelhante ao que é utilizado em aplicações reais.
+
+Toda a lógica foi pensada para manter o código **limpo**, **organizado** e **fácil de evoluir**.
+
+---
+
 ## ✨ Funcionalidades
 
 | Funcionalidade            | Descrição                                                                  |
 |---------------------------|----------------------------------------------------------------------------|
 | 🟢 **Adicionar Usuário**   | Cadastra um novo usuário informando nome, e-mail e idade                  |
-| 📋 **Listar Usuários**     | Exibe todos os usuários cadastrados no sistema                            |
+| 📋 **Listar Usuários**     | Exibe todos os usuários cadastrados                                        |
 | ✏️ **Atualizar Usuário**   | Permite atualizar os dados de um usuário existente                        |
 | ❌ **Remover Usuário**     | Remove um usuário com base no e-mail                                      |
 | ⚠️ **Validação Básica**    | Trata casos como usuário não encontrado e entradas inválidas              |
 
 ---
 
-## 🎯 Objetivos do Projeto
+## 🧠 Conceitos Aplicados
 
-- Praticar os conceitos fundamentais de **Java**
-- Aplicar **POO** na prática (classes, objetos, encapsulamento)
-- Separar responsabilidades utilizando camadas (ex: `service` e `repository`)
-- Simular operações de um sistema real de cadastro via console
+- Programação Orientada a Objetos (POO)
+- Encapsulamento e uso de getters e setters
+- Separação de responsabilidades (Model, Service e Repository)
+- Uso de coleções (`List`)
+- Validações básicas de dados
+- Organização de código em pacotes
 
 ---
+
+## 🗂️ Estrutura do Projeto
+
+```text
+src/
+ ├── model/
+ │   └── Usuario.java
+ ├── repository/
+ │   └── UsuarioRepository.java
+ ├── service/
+ │   └── UsuarioService.java
+ └── application/
+     └── Main.java
