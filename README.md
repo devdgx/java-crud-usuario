@@ -1,8 +1,6 @@
 # 🟢 Java CRUD de Usuários
 
-[![Java](https://img.shields.io/badge/Java-17+-blue?style=for-the-badge&logo=java)](https://www.java.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-Project-black?style=for-the-badge&logo=github)]
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)]
+[![Concepts](https://skillicons.dev/icons?i=java)](https://skillicons.dev)
 
 Projeto de estudo desenvolvido em **Java**, que implementa um **CRUD completo de usuários via console**, com foco em **Programação Orientada a Objetos (POO)**, organização de código e boas práticas de desenvolvimento.
 
