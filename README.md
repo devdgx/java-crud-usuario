@@ -46,6 +46,15 @@ O projeto segue uma arquitetura em camadas, separando responsabilidades:
 - **Application**: ponto de entrada do sistema
 ---
 
+## 🔄 Fluxo da Aplicação
+
+1. O usuário interage com o menu via console
+2. A camada `Service` valida os dados
+3. O `Repository` executa as operações de CRUD
+4. O sistema retorna mensagens de sucesso ou erro
+
+---
+
 ## 🗂️ Estrutura do Projeto
 
 ```text
